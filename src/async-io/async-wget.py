@@ -1,5 +1,7 @@
 import asyncio
 
+# 用asyncio提供的@asyncio.coroutine可以把一个generator标记为coroutine类型，然后在coroutine内部用yield from调用另一个coroutine实现异步操作。
+
 
 @asyncio.coroutine
 def wget(host):
